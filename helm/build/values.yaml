@@ -1,0 +1,15 @@
+app:
+  name: felixreuter-poi-gateway-app
+  namespace: felixreuter
+  cluster: .apps.rosa-pzz6v.9nln.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rhdh23-demo/felixreuter-gateway
+  org: rhdh23-demo
+  name: felixreuter-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: felixreuter/poi-gateway-app
+  tag: latest
